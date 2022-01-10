@@ -1,0 +1,20 @@
+{
+  "film_work_pg": {
+    "dsn": {
+      "dbname": "movies_database",
+      "user": "postgres",
+      "password": "postgres",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "options": "-c search_path=content"
+    },
+    "state_file_path": "state_file.json",
+    "fetch_delay": 0.1,
+    "limit": 100,
+    "order_field": ["updated_at"],
+    "state_field": ["updated_at"]
+  },
+  "elastic_connection": {
+    "url_elastic": "http://localhost:9200/"
+  }
+}
